@@ -45,32 +45,23 @@ export default function Home() {
 			</div>
 			<div className="about-section py-20 md:py-40 px-8 md:px-32">
 				{/* <Image className="about-bg" src={fire2} alt="david buraga" /> */}
-				<About
-					children={
-						<>
-							<div className={`order-2 md:order-1 mt-14 text-center md:text-left md:mt-0`}>
-								<h1 className={`${styles.title} text-white text-6xl`}>About me.</h1>
-								<p className={`${styles.text} text-xl mt-4 text-white w-full md:w-4/5`}>
-									Started coding at 16, and got into design around the same time. Now I’m a web
-									developer, designer, youtuber, artist and computer engineering student. I’m
-									passionate about improving my skills, learning new things and helping others grow
-									their brand.
-									<br />
-									<br />
-									Currently working on:{" "}
-									<Link
-										className="underline"
-										target="blank"
-										href="https://vessel-waitlist.netlify.app/"
-									>
-										Vessel
-									</Link>
-								</p>
-							</div>
-							<Image className="rounded-full w-72 order-1 md:order-2" src={aboutimg} alt="david-buraga" />
-						</>
-					}
-				/>
+				<About>
+					<div className={`order-2 md:order-1 mt-14 text-center md:text-left md:mt-0`}>
+						<h1 className={`${styles.title} text-white text-6xl`}>About me.</h1>
+						<p className={`${styles.text} text-xl mt-4 text-white w-full md:w-4/5`}>
+							Started coding at 16, and got into design around the same time. Now I’m a web developer,
+							designer, youtuber, artist and computer engineering student. I’m passionate about improving
+							my skills, learning new things and helping others grow their brand.
+							<br />
+							<br />
+							Currently working on:{" "}
+							<Link className="underline" target="blank" href="https://vessel-waitlist.netlify.app/">
+								Vessel
+							</Link>
+						</p>
+					</div>
+					<Image className="rounded-full w-72 order-1 md:order-2" src={aboutimg} alt="david-buraga" />
+				</About>
 			</div>
 			<div className={`${styles.background} px-8 md:px-32 py-4 relative pb-32`}>
 				<h1 id="work" className={`${styles.title} text-white text-6xl`}>
