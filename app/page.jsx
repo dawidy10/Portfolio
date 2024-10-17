@@ -154,7 +154,7 @@ export default function Home() {
 								<Image src="/work/refugiu.jpg" width={100} height={100} className="object-cover" />
 							</div>
 							<CardTitle>Refugiu pentru Suflet</CardTitle>
-							<CardDescription>refugiupentrusuflet.ro</CardDescription>
+							{/* <CardDescription>refugiupentrusuflet.ro</CardDescription> */}
 						</CardHeader>
 						<CardContent>
 							<Tabs defaultValue="ro">
@@ -184,7 +184,7 @@ export default function Home() {
 							</Tabs>
 						</CardContent>
 						<CardFooter>
-							<p className="text-sm text-gray-600">Web design | Web development</p>
+							<p className="text-sm text-gray-600">Logo Design</p>
 						</CardFooter>
 					</Card>
 					<Card className="bg-[#111112] border-0 text-white w-100 md:w-2/3 text-center py-4 mt-8">
@@ -193,7 +193,7 @@ export default function Home() {
 								<Image src="/anto.jpg" width={100} height={100} className="object-cover" />
 							</div>
 							<CardTitle>Anto Sticea</CardTitle>
-							<CardDescription>@antosticea</CardDescription>
+							{/* <CardDescription>@antosticea</CardDescription> */}
 						</CardHeader>
 						<CardContent>
 							<Tabs defaultValue="ro">
@@ -223,6 +223,46 @@ export default function Home() {
 						</CardContent>
 						<CardFooter>
 							<p className="text-sm text-gray-600">Web design | Web development</p>
+						</CardFooter>
+					</Card>
+					<Card className="bg-[#111112] border-0 text-white w-100 md:w-2/3 text-center py-4 mt-8">
+						<CardHeader>
+							<div className="ml-auto mr-auto w-20 h-20 rounded-full overflow-hidden">
+								<Image src="/startpoint.png" width={100} height={100} className="object-cover" />
+							</div>
+							<CardTitle>Startpoint Lighthouse</CardTitle>
+							{/* <CardDescription>@antosticea</CardDescription> */}
+						</CardHeader>
+						<CardContent>
+							<Tabs defaultValue="ro">
+								<TabsList className="bg-[#111112]">
+									<TabsTrigger className="bg-[#111112]" value="ro">
+										RO
+									</TabsTrigger>
+									<TabsTrigger className="bg-[#111112]" value="en">
+										EN
+									</TabsTrigger>
+								</TabsList>
+								<TabsContent value="ro">
+									<p className={`${styles.text} text-left md:text-lg mt-4`}>
+										"Am colaborat cu David pentru crearea logo-ului companiei mele și a fost o
+										experiență excelentă. Deși la început nu eram sigură ce îmi doream, David a pus
+										întrebări potrivite pentru a înțelege brandul meu. Abilitatea lui de a înțelege
+										viziunea mea și de a o transforma într-un design creativ și semnificativ a fost
+										cu adevărat impresionantă. Pe tot parcursul procesului a fost extrem de
+										profesionist, atent la detalii și deschis la feedback. Designul final este
+										modern și surprinde perfect esența companiei mele. Am primit deja multe
+										complimente pentru logo-ul creat, ceea ce confirmă calitatea muncii lui. Îl
+										recomand oricui caută servicii de design de înaltă calitate!"
+									</p>
+								</TabsContent>
+								<TabsContent value="en">
+									<p className={`${styles.text} text-left`}></p>
+								</TabsContent>
+							</Tabs>
+						</CardContent>
+						<CardFooter>
+							<p className="text-sm text-gray-600">Logo Design | Branding</p>
 						</CardFooter>
 					</Card>
 				</div>
