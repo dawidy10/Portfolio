@@ -27,8 +27,8 @@ export default function Home() {
 	return (
 		<>
 			<div className="landing-section">
-				<Image className="landing-bg" src={homebg} alt="david buraga" />
-				<Image className="landing-bg" src={fire1} alt="david buraga" />
+				<Image priority={true} className="landing-bg" src={homebg} alt="david buraga" />
+				<Image priority={true} className="landing-bg" src={fire1} alt="david buraga" />
 				<div
 					className={`${styles.fadeInAnimation} w-100 text-center text-white relative h-screen flex flex-col justify-center`}
 				>
@@ -80,6 +80,7 @@ export default function Home() {
 								<Card className="border-0 bg-transparent">
 									<CardContent className="flex aspect-[1] items-center justify-center p-0">
 										<Image
+											priority={true}
 											src={work[index]}
 											// width={800}
 											// height={400}
