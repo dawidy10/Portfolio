@@ -50,8 +50,8 @@ export default function Home() {
 						<h1 className={`${styles.title} text-white text-6xl`}>About me.</h1>
 						<p className={`${styles.text} text-xl mt-4 text-white w-full md:w-4/5`}>
 							Started coding at 16, and got into design around the same time. Now I’m a web developer,
-							designer, youtuber, artist and computer engineering student. I’m passionate about improving
-							my skills, learning new things and helping others grow their brand.
+							designer, artist and computer engineering student. I’m passionate about improving my skills,
+							learning new things and helping others grow their brand.
 							<br />
 							<br />
 							Currently working on:{" "}
@@ -151,6 +151,42 @@ export default function Home() {
 					<Card className="bg-[#111112] border-0 text-white w-100 md:w-2/3 text-center py-4 md:px-8 mt-8 md:mt-0">
 						<CardHeader>
 							<div className="ml-auto mr-auto w-20 h-20 rounded-full overflow-hidden">
+								<Image src="/work/apologia1.jpg" width={100} height={100} className="object-cover" />
+							</div>
+							<CardTitle>Apologia Reformată</CardTitle>
+						</CardHeader>
+						<CardContent>
+							<Tabs defaultValue="ro">
+								<TabsList className="bg-[#111112]">
+									<TabsTrigger className="bg-[#111112]" value="ro">
+										RO
+									</TabsTrigger>
+									<TabsTrigger className="bg-[#111112]" value="en">
+										EN
+									</TabsTrigger>
+								</TabsList>
+								<TabsContent value="ro">
+									<p className={`${styles.text} text-left md:text-lg mt-4`}>
+										"Recent am schimbat logo-ul și aspectul general al interfeței pe YouTube. Pare
+										totul mai profesionist din punct de vedere grafic. Am tot ce îmi trebuie din
+										punct de vedere grafic pentru o masă de prezentare a cărților, hanorace, căni
+										printate, logo-uri pentru toate platformele. De asemenea am primit ajutor în
+										refacerea logoului pentru canalul "Povești cu Cristina". Mulțumim pentru
+										colaborarea excelentă!"
+									</p>
+								</TabsContent>
+								<TabsContent value="en">
+									<p className={`${styles.text} text-left`}></p>
+								</TabsContent>
+							</Tabs>
+						</CardContent>
+						<CardFooter>
+							<p className="text-sm text-gray-600">Rebranding | Logo Design</p>
+						</CardFooter>
+					</Card>
+					<Card className="bg-[#111112] border-0 text-white w-100 md:w-2/3 text-center py-4 mt-8 md:px-8">
+						<CardHeader>
+							<div className="ml-auto mr-auto w-20 h-20 rounded-full overflow-hidden">
 								<Image src="/work/refugiu.jpg" width={100} height={100} className="object-cover" />
 							</div>
 							<CardTitle>Refugiu pentru Suflet</CardTitle>
@@ -187,7 +223,7 @@ export default function Home() {
 							<p className="text-sm text-gray-600">Logo Design</p>
 						</CardFooter>
 					</Card>
-					<Card className="bg-[#111112] border-0 text-white w-100 md:w-2/3 text-center py-4 mt-8">
+					<Card className="bg-[#111112] border-0 text-white w-100 md:w-2/3 text-center py-4 mt-8 md:px-8">
 						<CardHeader>
 							<div className="ml-auto mr-auto w-20 h-20 rounded-full overflow-hidden">
 								<Image src="/anto.jpg" width={100} height={100} className="object-cover" />
@@ -225,7 +261,7 @@ export default function Home() {
 							<p className="text-sm text-gray-600">Web design | Web development</p>
 						</CardFooter>
 					</Card>
-					<Card className="bg-[#111112] border-0 text-white w-100 md:w-2/3 text-center py-4 mt-8">
+					<Card className="bg-[#111112] border-0 text-white w-100 md:w-2/3 text-center py-4 mt-8 md:px-8">
 						<CardHeader>
 							<div className="ml-auto mr-auto w-20 h-20 rounded-full overflow-hidden">
 								<Image src="/startpoint.png" width={100} height={100} className="object-cover" />
@@ -266,13 +302,16 @@ export default function Home() {
 						</CardFooter>
 					</Card>
 				</div>
-
-				<h1 className={`${styles.text} mt-32 text-center text-white text-2xl`}>
-					Need help with your own brand?
-				</h1>
-				<Link href="https://calendly.com/davidburaga10/discutie-1-la-1" target="blank">
-					<p className={`${styles.text} mt-20 underline text-center text-white text-2xl`}>Book a call.</p>
-				</Link>
+				<div className="w-100 flex-col items-center text-center">
+					<h1 className={`${styles.text} mt-32 text-center text-white font-bold text-2xl`}>
+						Need help with your own brand?
+					</h1>
+					<Button className={`${styles.cta} mt-8 text-xl`}>
+						<Link href="https://calendly.com/davidburaga10/discutie-1-la-1" target="blank">
+							<p>Book a call.</p>
+						</Link>
+					</Button>
+				</div>
 			</div>
 		</>
 	);
